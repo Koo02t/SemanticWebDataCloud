@@ -1,0 +1,266 @@
+﻿html, body {
+    min-height: 100%;
+    height: 100%;
+    margin-right:10px;
+    margin-left:10px;
+}
+
+h3 {
+    border-bottom: 2px solid black;
+}
+
+/*全体*/
+.large-font {
+    font-size: 25px;
+    color: indianred;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-family:'Bitter',serif
+    
+}
+.title-color {
+    
+    color: indianred;
+
+}
+.background-color {
+    background-color: indianred;
+    border-color:indianred;
+}
+.fill {
+    height: calc(100vh - 370px);
+    
+    border-bottom: 1px solid #cccccc;
+}
+.fill-a {
+    height: 50%;
+}
+
+.fill-b {
+    height: calc(100vh - 400px);
+}
+.fill-c {
+    height: calc(100vh - 400px);
+    margin-top: 10px;
+}
+.fill-d {
+    width: 50%;
+}
+.fill-e {
+    margin-top: 20px;
+}
+
+
+/*クエリコードエリア*/
+.smallicon {
+    font-size: 20px;
+    border-bottom: 1px solid #cccccc;
+   margin-left:0px;
+}
+.normal-font {
+    font-family: "メイリオ";
+}
+.form-control-width {
+    height: calc(100vh - 750px);
+    width: 100%;
+    margin-top:17px;
+}
+.querycodesample {
+    font-size: 13px;
+    
+}
+.URIk {
+   width: 100%;
+}
+
+.navistyle{
+    padding-top:0px;
+    margin-top:0px;
+    height:50px;
+}
+
+/*ビュアートツリー*/
+body {
+    padding-top: 60px; /* space for the top nav bar */
+    margin-right: 30px;
+}
+
+#appBuckets {
+    overflow: auto;
+    width: 100%;
+    height: calc(100vh - 150px);
+}
+
+#forgeViewer {
+    width: 100%;
+}
+
+/*クエリコード結果*/
+th, td {
+    /* 枠線を1本線指定 */
+    border: solid 1px;
+    width: 100px;
+    height:30px;
+    margin-right:150px;
+    margin-left:150px;
+}
+#querycode{
+    width:50px;
+}
+#maintable {
+    margin-top: 30px;
+}
+.table-width {
+    
+}
+table {
+    /* 枠線を1本線指定 */
+    border: solid 1px;
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+/*追加する機能の部分*/
+.myAwesomeExtensionIcon {
+    background-image: url(/img/myAwesomeIcon.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.handleSelectionExtensionIcon {
+    background-image: url(https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/white/png/24/object-group.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*ドロップダウンメニューのcss*/
+ul.ddmenu {
+    margin: 0px; /* メニューバー外側の余白(ゼロ) */
+    padding: 0px 0px 0px 0px; /* メニューバー内側の余白(左に15px) */
+    background-color: #cc0000; /* バーの背景色(濃い赤色) */
+    height:100%
+}
+
+    ul.ddmenu li {
+        width: 125px; /* メニュー項目の横幅(125px) */
+        display: inline-block; /* ★1:横並びに配置する */
+        list-style-type: none; /* ★2:リストの先頭記号を消す */
+        position: relative; /* ★3:サブメニュー表示の基準位置にする */
+    }
+
+    ul.ddmenu a {
+        background-color: #cc0000; /* メニュー項目の背景色(濃い赤色) */
+        color: white; /* メニュー項目の文字色(白色) */
+        line-height: 50px; /* メニュー項目のリンクの高さ(40px) */
+        text-align: center; /* メインメニューの文字列の配置(中央寄せ) */
+        text-decoration: none; /* メニュー項目の装飾(下線を消す) */
+        font-weight: bold; /* 太字にする */
+        display: block; /* ★4:項目内全域をリンク可能にする */
+        
+    }
+
+        ul.ddmenu a:hover {
+            background-color: #ffdddd; /* メニュー項目にマウスが載ったときの背景色(淡いピンク) */
+            color: #dd0000; /* メニュー項目にマウスが載ったときの文字色(濃い赤色) */
+        }
+
+    /* ▼サブメニューは、とりあえず非表示にしておく */
+    ul.ddmenu ul {
+        display: none; /* ★5:非表示にする */
+    }
+    ul.ddmenu ul {
+        display: none; /* ★1:標準では非表示にする */
+        margin: 0px; /* ★2:サブメニュー外側の余白(ゼロ) */
+        padding: 0px; /* ★3:サブメニュー内側の余白(ゼロ) */
+        position: absolute; /* ★4:絶対配置にする */
+    }
+
+    /* ---------------------------------- */
+    /* ▼サブメニューがある場合に開く処理 */ /* ※サブメニューが1階層しか存在しない場合の記述 */
+    /* ---------------------------------- */
+    ul.ddmenu li:hover ul {
+        display: block; /* ★5:マウスポインタが載っている項目の内部にあるリストを表示する */
+    }
+    ul.ddmenu ul li { /* ※A */
+        width: 135px; /* サブメニュー1項目の横幅(135px) */
+        border-top: 1px solid pink; /* 項目上側の枠線(ピンク色で1pxの実線) */
+    }
+
+        ul.ddmenu ul li a { /* ※B */
+            line-height: 35px; /* サブメニュー1項目の高さ(35px) */
+            text-align: left; /* 文字列の配置(左寄せ) */
+            padding-left: 5px; /* 文字列前方の余白(5px) */
+            font-weight: normal; /* 太字にはしない */
+        }
+
+            ul.ddmenu ul li a:hover { /* ※C */
+                background-color: #ffff80; /* サブメニュー項目にマウスが載ったときの背景色(淡い黄色) */
+                color: #005500; /* サブメニュー項目にマウスが載ったときの文字色(濃い緑色) */
+            }
+
+ /*tree*/
+
+.construction ul li {
+    list-style:none;
+}
+.construction ul:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    border-left: 1px solid black;
+}
+.construction ul li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 15px;
+    height: 0;
+    border-top: 1px solid black;
+}
+.construction ul li:last-child:before {
+    top: 18px;
+    bottom: 0;
+    height: auto;
+    background-color: #fff;
+}
+.construction ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.construction ul {
+    position: relative;
+
+    margin-left: 15px;
+}
+.construction ul li {
+
+position: relative;
+
+margin: 0;
+
+padding-top: 7px;
+
+padding-left:18px;
+
+/* padding: 0; */
+
+}
+
+#fullOverlay {
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    width: 30%;
+    height: 100%;
+    background: rgba(255, 255, 255, .8);
+    z-index: -1;
+    display: none;
+}
